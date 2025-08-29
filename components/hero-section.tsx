@@ -3,11 +3,11 @@ import { Apple } from "lucide-react";
 
 export function HeroSection() {
   return (
-    <section className="min-h-screen bg-black relative overflow-hidden p-0 m-0">
+    <section className="min-h-screen bg-black relative overflow-hidden p-0 m-0 pt-24">
       <div className="absolute inset-x-0 top-0 bottom-10 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:50px_50px]" />
 
       <div className="relative z-10 max-w-6xl pl-6 sm:pl-10 lg:pl-20 p-0 m-0">
-        <div className="pt-32 pb-0">
+        <div className="pb-0">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-light text-white mb-12 max-w-4xl leading-snug">
             Personal Protection by the
             <br />
@@ -32,12 +32,15 @@ export function HeroSection() {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 max-w-2xl">
+            {/* Anchor link = no JS, no errors */}
             <Button
+              asChild
               size="lg"
               className="flex-1 bg-white text-black hover:bg-gray-100 rounded-full px-6 py-3 text-base font-medium"
             >
-              Request Consultation
+              <a href="#contact">Request Consultation</a>
             </Button>
+
             <Button
               variant="outline"
               size="lg"
