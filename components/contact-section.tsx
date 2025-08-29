@@ -25,22 +25,24 @@ export function ContactSection() {
   };
 
   return (
-    <section className="bg-black text-white py-20 px-6">
-      {/* ✅ Left margin & padding applied consistently here */}
-      <div className="max-w-6xl mx-auto pl-8">
-        <p className="text-lg md:text-xl leading-relaxed text-gray-300 mb-16 max-w-5xl">
+    <section
+      id="contact"
+      className="bg-black text-white py-20 px-6 scroll-mt-24"
+    >
+      <div className="max-w-6xl mx-auto ml-4">
+        <p className="text-lg md:text-xl leading-relaxed text-gray-300 mb-16 max-w-5xl ml-4">
           Bodyguard provides discreet, high-level protection for executives,
           public figures, and innovators facing elevated risk. We assess
           threats, monitor digital exposure, and ensure readiness—so our clients
           operate confidently.
         </p>
 
-        <div className="space-y-8">
+        <div className="space-y-8 ml-4">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 ml-4">
               Let's Talk About Your Security
             </h2>
-            <p className="text-gray-400 text-lg">
+            <p className="text-gray-400 text-lg ml-4">
               We'll assess your exposure, vulnerabilities, and provide next
               steps.
             </p>

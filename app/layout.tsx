@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Bodyguard",
   description: "Created with v0",
   generator: "v0.app",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
